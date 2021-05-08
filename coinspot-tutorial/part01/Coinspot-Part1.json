@@ -1,0 +1,107 @@
+{
+  "Name": "Coinspot-Part1",
+  "CreationDate": "2021-5-8",
+  "Commands": [
+    {
+      "Command": "open",
+      "Target": "https://www.coinspot.com.au/my/dashboard",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "executeScript_Sandbox",
+      "Target": "return Number(1)",
+      "Value": "currentLine",
+      "Description": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "xpath=//*[@id=\"top\"]/div/div/nav/ul/li[2]/a",
+      "Value": "",
+      "Targets": [
+        "linkText=Wallets",
+        "xpath=//*[@id=\"top\"]/div/div/nav/ul/li[2]/a",
+        "xpath=//div/div/nav/ul/li[2]/a",
+        "css=#top > div > div > nav > ul > li:nth-child(2) > a"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"content\"]/div[3]/div/div/div/div[2]/div/div/input",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"content\"]/div[3]/div/div/div/div[2]/div/div/input",
+        "xpath=//input[@type='text']",
+        "xpath=//input",
+        "css=#content > div.page-content > div > div > div > div:nth-child(2) > div > div.form-group.form-inline.pull-left > input"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "xpath=//*[@id=\"content\"]/div[3]/div/div/div/div[2]/div/div/input",
+      "Value": "BNB",
+      "Targets": [
+        "xpath=//*[@id=\"content\"]/div[3]/div/div/div/div[2]/div/div/input",
+        "xpath=//input[@type='text']",
+        "xpath=//input",
+        "css=#content > div.page-content > div > div > div > div:nth-child(2) > div > div.form-group.form-inline.pull-left > input"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "linkText=OPEN BNB WALLET",
+      "Value": "",
+      "Targets": [
+        "linkText=OPEN BNB WALLET",
+        "xpath=//*[@id=\"content\"]/div[3]/div/div/div/div[4]/div[2]/div/div/table/tbody/tr[2]/td[6]/a",
+        "xpath=//tr[2]/td[6]/a",
+        "css=#content > div.page-content > div > div > div > div:nth-child(4) > div.col-md-12.hidden-xs > div > div > table > tbody > tr.walletitem.showrow > td:nth-child(6) > a"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "comment",
+      "Target": "clickAndWait // linkText=OPEN BNB WALLET",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "comment",
+      "Target": "clickAndWait // linkText=OPEN BNB WALLET",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "linkText=Sell",
+      "Value": "",
+      "Targets": [
+        "linkText=Sell",
+        "xpath=//*[@id=\"content\"]/div[3]/div/div/div[2]/div[2]/div[2]/div[3]/div/div/div[2]/div/div/div[2]/a[2]",
+        "xpath=//div[2]/a[2]",
+        "css=#content > div.page-content > div > div > div.myaccount.wallet.container.page-content-body > div:nth-child(2) > div.col-sm-8.col-md-8.col-lg-9 > div.row > div > div:nth-child(1) > div.panel-body.hidden-xs > div > div > div.col-lg-7.bss-btns > a:nth-child(2)"
+      ],
+      "Description": ""
+    },
+    {
+      "Command": "storeText",
+      "Target": "xpath=//*[@id=\"content\"]/div[3]/div/div/div[2]/div/div[3]/div/div/div/h1/span",
+      "Value": "currentSellPrice",
+      "Description": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "xpath=//*[@id=\"content\"]/div[3]/div/div/div[2]/div/div[3]/div/div/div[2]/div[3]/div/span/small",
+      "Value": "",
+      "Targets": [
+        "xpath=//*[@id=\"content\"]/div[3]/div/div/div[2]/div/div[3]/div/div/div[2]/div[3]/div/span/small",
+        "xpath=//span/small",
+        "css=#content > div.page-content > div > div > div.container.myaccount.trade.page-content-body > div > div:nth-child(3) > div > div > div.row > div:nth-child(3) > div > span > small"
+      ],
+      "Description": ""
+    }
+  ]
+}
